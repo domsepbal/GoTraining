@@ -24,6 +24,7 @@ func main() {
 	fmt.Printf("%b\t", GB)
 	fmt.Printf("%d\n", GB)
 	fmt.Printf("%d\n", GB)
+	fmt.Printf("%d\n", GB)
 
 
 
