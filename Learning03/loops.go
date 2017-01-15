@@ -3,24 +3,20 @@ package main
 import "fmt"
 
 func main() {
-	for i := 0; i <= 30; i++{
-		for l := 30; l > i+2 ; l-- {
-			fmt.Print("\t")
-		}
-		//Left side
-		for k := 1; k < i - 1 ; k++  {
-			fmt.Print("*")
-		}
+	width := 20
+	height := 40
+
+	for i := 0; i <= height; i++{
 		//Right Side
-		for j := 0; j < i - 1 ; j++ {
+		for j := width; j < i - 1 ; j++ {
 			fmt.Print("*")
 		}
 		fmt.Println()
 
 	}
 
-	for i := 30; i >= 0 ; i-- {
-		for j := 0;j < i ; j++  {
+	for i := height; i >= 0 ; i-- {
+		for j := width;j < i ; j++  {
 			fmt.Print("*")
 
 		}
