@@ -25,6 +25,20 @@ func main() {
 		fmt.Println(n)
 	})
 
+	xs := filter([]int{1,2,3,4,5}, func(n int) bool{
+		return n > 1
+	})
+	fmt.Println(xs)
+
+}
+
+func filter(numbers []int, callback func(int) bool) []int {
+	var xs []int
+	for _, n := range numbers{
+		xs = append(xs, n)
+	}
+
+	return xs
 }
 
 func visit(numbers []int, callback func(int)) {
