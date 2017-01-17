@@ -10,7 +10,7 @@ func main() {
 	num := 10
 	fmt.Println(divideandeven(num))
 
-	//Shows how a slice will grow, once it hits cap, creates a new array and copies old on into it
+	//Shows how a slice will grow, once it hits cap, creates a new array and copies old one into it
 	number := make([]int, 0, 5)
 	for i := 0; i <= 10; i++ {
 		number = append(number, i)
